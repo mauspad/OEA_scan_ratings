@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 This experiment was created using PsychoPy3 Experiment Builder (v3.2.4),
-    on May 24, 2021, at 15:54
+    on June 03, 2021, at 09:43
 If you publish work using this script the most relevant publication is:
 
     Peirce J, Gray JR, Simpson S, MacAskill M, Höchenberger R, Sogo H, Kastman E, Lindeløv JK. (2019) 
@@ -35,7 +35,7 @@ os.chdir(_thisDir)
 # Store info about the experiment session
 psychopyVersion = '3.2.4'
 expName = 'prepost_ratings'  # from the Builder filename that created this script
-expInfo = {'participant': '', 'timepoint': ''}
+expInfo = {'participant': ''}
 dlg = gui.DlgFromDict(dictionary=expInfo, sortKeys=False, title=expName)
 if dlg.OK == False:
     core.quit()  # user pressed cancel
@@ -49,7 +49,7 @@ filename = _thisDir + os.sep + u'data/%s_%s_%s' % (expInfo['participant'], expNa
 # An ExperimentHandler isn't essential but helps with data saving
 thisExp = data.ExperimentHandler(name=expName, version='',
     extraInfo=expInfo, runtimeInfo=None,
-    originPath='C:\\Users\\mauspad\\Desktop\\new_OEA_stuff\\ratings\\scan_ratings\\prepost_ratings.py',
+    originPath='C:\\Users\\xf82\\Desktop\\OEA & HFD\\2 Baseline\\fMRI\\1 prescan ratings\\prepost_ratings.py',
     savePickle=True, saveWideText=True,
     dataFileName=filename)
 logging.console.setLevel(logging.WARNING)  # this outputs to the screen, not a file
@@ -514,7 +514,7 @@ for thisTrial in trials:
             intense_instructions.setAutoDraw(True)
         ##tie marker to mouse position
         x = mouse.getPos()[1]
-        intense_slider.markerPos=(x//5)
+        intense_slider.markerPos=(x // 5)
         
         ##write marker position and/or RT on click and end routine
         if mouse.getPressed()[0]:
@@ -608,7 +608,7 @@ for thisTrial in trials:
             like_instructions.setAutoDraw(True)
         ##tie marker to mouse position
         x = mouse.getPos()[1]
-        like_slider.markerPos=(x//5)
+        like_slider.markerPos=(x // 5)
         
         ##write marker position and/or RT on click and end routine
         if mouse.getPressed()[0]:

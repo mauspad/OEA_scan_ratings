@@ -6,7 +6,7 @@
     <Param name="Completed URL" updates="None" val="" valType="str"/>
     <Param name="Data filename" updates="None" val="u'data/%s_%s_%s' % (expInfo['participant'], expName, expInfo['date'])" valType="code"/>
     <Param name="Enable Escape" updates="None" val="True" valType="bool"/>
-    <Param name="Experiment info" updates="None" val="{'participant': '', 'timepoint': ''}" valType="code"/>
+    <Param name="Experiment info" updates="None" val="{'participant': ''}" valType="code"/>
     <Param name="Force stereo" updates="None" val="True" valType="bool"/>
     <Param name="Full-screen window" updates="None" val="True" valType="bool"/>
     <Param name="HTML path" updates="None" val="html" valType="str"/>
@@ -210,7 +210,7 @@
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="##start and hide mouse&amp;#10;mouse = event.Mouse(visible = False)&amp;#10;&amp;#10;##start timer - uncomment if you want RTs&amp;#10;#timer = core.Clock()&amp;#10;&amp;#10;##marker display options&amp;#10;like_slider.marker.size=(2,.1);&amp;#10;like_slider.marker.color='Red';&amp;#10;&amp;#10;##set initial mouse and marker positions&amp;#10;mouse.setPos((0,0))&amp;#10;like_slider.markerPos=0" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="##tie marker to mouse position&amp;#10;x = mouse.getPos()[1]&amp;#10;like_slider.markerPos=(x//5)&amp;#10;&amp;#10;##write marker position and/or RT on click and end routine&amp;#10;if mouse.getPressed()[0]:&amp;#10;    trials.addData('Like', like_slider.markerPos)&amp;#10;    #trials.addData('Like_RT', timer.getTime=())&amp;#10;    continueRoutine = False" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="##tie marker to mouse position&amp;#10;x = mouse.getPos()[1]&amp;#10;like_slider.markerPos=(x // 5)&amp;#10;&amp;#10;##write marker position and/or RT on click and end routine&amp;#10;if mouse.getPressed()[0]:&amp;#10;    trials.addData('Like', like_slider.markerPos)&amp;#10;    #trials.addData('Like_RT', timer.getTime=())&amp;#10;    continueRoutine = False" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
@@ -280,7 +280,7 @@
         <Param name="Begin JS Routine" updates="constant" val="" valType="extendedCode"/>
         <Param name="Begin Routine" updates="constant" val="###start and hide mouse&amp;#10;mouse = event.Mouse(visible=False)&amp;#10;&amp;#10;###start timer - uncomment if you want RTs&amp;#10;#timer = core.Clock()&amp;#10;&amp;#10;###marker display options&amp;#10;intense_slider.marker.size=(2,.1);&amp;#10;intense_slider.marker.color='Red';&amp;#10;&amp;#10;###set initial mouse and marker positions&amp;#10;mouse.setPos((0,0))&amp;#10;intense_slider.markerPos=0" valType="extendedCode"/>
         <Param name="Code Type" updates="None" val="Py" valType="str"/>
-        <Param name="Each Frame" updates="constant" val="##tie marker to mouse position&amp;#10;x = mouse.getPos()[1]&amp;#10;intense_slider.markerPos=(x//5)&amp;#10;&amp;#10;##write marker position and/or RT on click and end routine&amp;#10;if mouse.getPressed()[0]:&amp;#10;    trials.addData('Intense', intense_slider.markerPos)&amp;#10;    #trials.addData('Intense_RT', timer.getTime=())&amp;#10;    continueRoutine = False" valType="extendedCode"/>
+        <Param name="Each Frame" updates="constant" val="##tie marker to mouse position&amp;#10;x = mouse.getPos()[1]&amp;#10;intense_slider.markerPos=(x // 5)&amp;#10;&amp;#10;##write marker position and/or RT on click and end routine&amp;#10;if mouse.getPressed()[0]:&amp;#10;    trials.addData('Intense', intense_slider.markerPos)&amp;#10;    #trials.addData('Intense_RT', timer.getTime=())&amp;#10;    continueRoutine = False" valType="extendedCode"/>
         <Param name="Each JS Frame" updates="constant" val="" valType="extendedCode"/>
         <Param name="End Experiment" updates="constant" val="" valType="extendedCode"/>
         <Param name="End JS Experiment" updates="constant" val="" valType="extendedCode"/>
